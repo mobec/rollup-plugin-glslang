@@ -1,2 +1,16 @@
 # rollup-plugin-glslang
-takes a folder of shaders, compiles them and outputs to another folder
+
+import compile from 'rollup-plugin-glslang';
+
+export default {
+	return {
+		input: 'main.js',
+		output: 'bundle.js',
+		plugins: [
+			compile({
+				source: './glslShaders',
+				target: './compiledShaders'
+			})
+		]
+	}
+}

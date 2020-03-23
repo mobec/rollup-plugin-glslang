@@ -1,0 +1,36 @@
+{
+  "name": "rollup-plugin-glslang",
+  "description": "A rollup plugin that feeds shader files to the glslang compiler.",
+  "author": "Canned Inspiration",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "@webgpu/glslang": "0.0.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "postversion": "npm publish --access public"
+  },
+  "homepage": "https://github.com/cannedinspiration/rollup-plugin-glslang#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cannedinspiration/rollup-plugin-glslang.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cannedinspiration/rollup-plugin-glslang/issues"
+  },
+  "keywords": [
+    "rollup-plugin",
+    "rollup",
+    "plugin",
+    "glsl",
+    "glslang",
+    "shader",
+    "shaders",
+    "spir-v",
+    "spirv",
+    "vert",
+    "frag"
+  ],
+  "files": []
+}
