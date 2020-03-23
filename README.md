@@ -1,16 +1,18 @@
 # rollup-plugin-glslang
 
-import compile from 'rollup-plugin-glslang';
+```
+import compileGLSL from 'rollup-plugin-glslang';
 
 export default {
 	return {
 		input: 'main.js',
 		output: 'bundle.js',
 		plugins: [
-			compile({
+			compileGLSL({
 				source: './glslShaders',
 				target: './compiledShaders'
 			})
 		]
 	}
 }
+```
