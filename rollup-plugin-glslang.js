@@ -12,7 +12,7 @@ const defaultOptions = {
     target: './'
 };
 
-export default function compile(options = defaultOptions) {
+export default function(options = defaultOptions) {
     const compiler = glslang();
     return {
         name: 'rollup-plugin-glslang',
@@ -27,11 +27,9 @@ export default function compile(options = defaultOptions) {
                 const extension = file.substr(file.lastIndexOf('.') + 1);
                 if (extensions.hasOwnProperty(extension)) {
                     const sourcePath = path.join(options.source, file);
+                    const targetPath = path.join(options.target, file + '.spv');					
                     const glsl = fs.readFileSync(sourcePath, 'utf8');
-                    const code = compiler.compileGLSL(glsl, extensions[extension]);
-                    
-                    const targetPath = path.join(options.target, file + '.spv');
-                    fs.writeFileSync(targetPath, code);
+                    fs.writeFileSync(targetPath, compiler.compileGLSL(glsl, extensions[extension]));
                 }
             }
         }
