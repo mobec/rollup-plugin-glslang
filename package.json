@@ -1,7 +1,7 @@
 {
   "name": "rollup-plugin-glslang",
   "description": "reads a folder of shaders, compiles them and outputs to another folder",
-  "author": "dscrog",
+  "author": "javascribble",
   "version": "1.0.1",
   "license": "MIT",
   "dependencies": {
@@ -11,13 +11,13 @@
   "scripts": {
     "postversion": "npm publish --access public"
   },
-  "homepage": "https://github.com/dscrog/rollup-plugin-glslang#readme",
+  "homepage": "https://github.com/javascribble/rollup-plugin-glslang#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dscrog/rollup-plugin-glslang.git"
+    "url": "git+https://github.com/javascribble/rollup-plugin-glslang.git"
   },
   "bugs": {
-    "url": "https://github.com/dscrog/rollup-plugin-glslang/issues"
+    "url": "https://github.com/javascribble/rollup-plugin-glslang/issues"
   },
   "keywords": [
     "rollup-plugin",
