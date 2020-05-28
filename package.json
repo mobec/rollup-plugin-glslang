@@ -1,38 +1,38 @@
 {
-  "name": "rollup-plugin-glslang",
-  "description": "reads a folder of shaders, compiles them and outputs to another folder",
-  "author": "javascribble",
-  "version": "1.0.1",
-  "license": "MIT",
-  "dependencies": {
-    "@webgpu/glslang": "0.0.15"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "postversion": "npm publish --access public"
-  },
-  "homepage": "https://github.com/javascribble/rollup-plugin-glslang#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/javascribble/rollup-plugin-glslang.git"
-  },
-  "bugs": {
-    "url": "https://github.com/javascribble/rollup-plugin-glslang/issues"
-  },
-  "keywords": [
-    "rollup-plugin",
-    "rollup",
-    "plugin",
-    "glsl",
-    "glslang",
-    "shader",
-    "shaders",
-    "spir-v",
-    "spirv",
-    "vert",
-    "frag"
-  ],
-  "files": [
-	"source"
-  ]
+    "name": "rollup-plugin-glslang",
+    "description": "reads a folder of shaders, compiles them and outputs to another folder",
+    "author": "javascribble",
+    "version": "1.0.1",
+    "license": "MIT",
+    "dependencies": {
+        "@webgpu/glslang": "0.0.15"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "postversion": "npm publish --access public"
+    },
+    "homepage": "https://github.com/javascribble/rollup-plugin-glslang#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/javascribble/rollup-plugin-glslang.git"
+    },
+    "bugs": {
+        "url": "https://github.com/javascribble/rollup-plugin-glslang/issues"
+    },
+    "keywords": [
+        "rollup-plugin",
+        "rollup",
+        "plugin",
+        "glsl",
+        "glslang",
+        "shader",
+        "shaders",
+        "spir-v",
+        "spirv",
+        "vert",
+        "frag"
+    ],
+    "files": [
+        "source"
+    ]
 }
