@@ -8,6 +8,7 @@
         "@webgpu/glslang": "0.0.15"
     },
     "devDependencies": {},
+	"main": './source/rollup-plugin-glslang.js',
     "scripts": {
         "postversion": "npm publish --access public"
     },
