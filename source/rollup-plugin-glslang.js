@@ -15,7 +15,7 @@ const defaultOptions = {
 export default function(options = defaultOptions) {
     const compiler = glslang();
     return {
-        name: 'rollup-plugin-glslang',
+        name: 'glslang',
         generateBundle() {
             const targetDirectory = path.dirname(options.target);
             if (!fs.existsSync(targetDirectory)) {
