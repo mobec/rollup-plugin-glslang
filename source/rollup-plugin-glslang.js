@@ -3,8 +3,8 @@ import path from 'path';
 import fs from 'fs';
 
 const extensions = {
-    frag: "fragment",
-    vert: "vertex"
+    frag: 'fragment',
+    vert: 'vertex'
 };
 
 const defaultOptions = {
@@ -12,7 +12,7 @@ const defaultOptions = {
     target: './'
 };
 
-export default function(options = defaultOptions) {
+export default function (options = defaultOptions) {
     const compiler = glslang();
     return {
         name: 'glslang',
@@ -27,7 +27,7 @@ export default function(options = defaultOptions) {
                 const extension = file.substr(file.lastIndexOf('.') + 1);
                 if (extensions.hasOwnProperty(extension)) {
                     const sourcePath = path.join(options.source, file);
-                    const targetPath = path.join(options.target, file + '.spv');					
+                    const targetPath = path.join(options.target, file + '.spv');
                     const glsl = fs.readFileSync(sourcePath, 'utf8');
                     fs.writeFileSync(targetPath, compiler.compileGLSL(glsl, extensions[extension]));
                 }
