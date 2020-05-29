@@ -2,13 +2,13 @@
     "name": "rollup-plugin-glslang",
     "description": "reads a folder of shaders, compiles them and outputs to another folder",
     "author": "javascribble",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "license": "MIT",
     "dependencies": {
         "@webgpu/glslang": "0.0.15"
     },
     "devDependencies": {},
-	"main": "./source/rollup-plugin-glslang.js",
+    "main": "./source/rollup-plugin-glslang.js",
     "scripts": {
         "postversion": "npm publish --access public"
     },
