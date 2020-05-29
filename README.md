@@ -1,7 +1,7 @@
 # rollup-plugin-glslang
 
 ```
-import glslang from 'rollup-plugin-glslang';
+import { glslang } from '@javascribble/rollup-plugin-glslang';
 
 export default {
   ...options,
