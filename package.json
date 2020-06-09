@@ -1,7 +1,6 @@
 {
     "name": "@javascribble/rollup-plugin-glslang",
     "description": "reads a folder of shaders, compiles them and outputs to another folder",
-    "author": "javascribble",
     "version": "0.1.1",
     "license": "MIT",
     "dependencies": {
