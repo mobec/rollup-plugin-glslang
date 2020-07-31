@@ -1,4 +1,4 @@
-import glslang from '@webgpu/glslang';
+import _glslang from '@webgpu/glslang';
 import path from 'path';
 import fs from 'fs';
 
@@ -12,8 +12,8 @@ const defaultOptions = {
     target: './'
 };
 
-module.exports.glslang = (options = defaultOptions) => {
-    const compiler = glslang();
+export default glslang = (options = defaultOptions) => {
+    const compiler = _glslang();
     return {
         name: 'glslang',
         generateBundle() {

@@ -7,7 +7,7 @@
         "@webgpu/glslang": "0.0.15"
     },
     "devDependencies": {},
-    "main": "./source/main.js",
+    "module": "./source/main.js",
     "scripts": {
         "postversion": "npm publish --access public"
     },
