@@ -10,7 +10,8 @@
     "main": "./dist/cjs/main.js",
     "module": "./dist/es/main.js",
     "scripts": {
-        "postversion": "npm run build && npm publish --access public",
+        "postversion": "npm publish --access public",
+        "prepare": "npm run build",
         "build": "rollup -c"
     },
     "homepage": "https://github.com/javascribble/rollup-plugin-glslang#readme",
