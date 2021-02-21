@@ -7,9 +7,11 @@
         "@webgpu/glslang": "0.0.15"
     },
     "devDependencies": {},
-    "main": "./source/main.js",
+    "main": "./dist/cjs/main.js",
+    "module": "./dist/es/main.js",
     "scripts": {
-        "postversion": "npm publish --access public"
+        "postversion": "npm run build && npm publish --access public",
+        "build": "rollup -c"
     },
     "homepage": "https://github.com/javascribble/rollup-plugin-glslang#readme",
     "repository": {
