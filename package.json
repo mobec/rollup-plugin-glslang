@@ -6,7 +6,9 @@
     "dependencies": {
         "@webgpu/glslang": "0.0.15"
     },
-    "devDependencies": {},
+    "devDependencies": {
+        "rollup": "^2.39.0"
+    },
     "main": "./dist/cjs/main.js",
     "module": "./dist/es/main.js",
     "scripts": {
