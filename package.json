@@ -38,6 +38,8 @@
         "frag"
     ],
     "files": [
-        "source"
+        "source",
+        "dist/cjs/main.js",
+        "dist/es/main.js"
     ]
 }
