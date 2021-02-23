@@ -13,7 +13,7 @@ const defaultOptions = {
     target: './'
 };
 
-export default glslang = (options = defaultOptions) => {
+const glslang = (options = defaultOptions) => {
     const compiler = _glslang();
     return {
         name: 'glslang',
@@ -36,3 +36,5 @@ export default glslang = (options = defaultOptions) => {
         }
     };
 };
+
+export { glslang };
