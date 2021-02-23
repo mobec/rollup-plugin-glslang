@@ -3,6 +3,7 @@ import path from 'path';
 import fs from 'fs';
 
 const extensions = {
+    comp: 'compute',
     frag: 'fragment',
     vert: 'vertex'
 };
