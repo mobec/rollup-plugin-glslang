@@ -1,10 +1,10 @@
 {
-    "name": "@javascribble/rollup-plugin-glslang",
-    "description": "reads a folder of shaders, compiles them and outputs to another folder",
-    "version": "0.1.1",
+    "name": "@mobecher/rollup-plugin-glslang",
+    "description": "reads a directory of shaders, compiles them and outputs to another directory",
+    "version": "0.2.0",
     "license": "MIT",
     "dependencies": {
-        "@webgpu/glslang": "0.0.15"
+        "@webgpu/glslang": "^0.0.15"
     },
     "devDependencies": {
         "rollup": "^2.39.0"
@@ -12,17 +12,16 @@
     "main": "./dist/cjs/main.js",
     "module": "./dist/es/main.js",
     "scripts": {
-        "postversion": "npm publish --access public",
         "prepare": "npm run build",
         "build": "rollup -c"
     },
-    "homepage": "https://github.com/javascribble/rollup-plugin-glslang#readme",
+    "homepage": "https://github.com/mobec/rollup-plugin-glslang#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/javascribble/rollup-plugin-glslang.git"
+        "url": "git+https://github.com/mobec/rollup-plugin-glslang.git"
     },
     "bugs": {
-        "url": "https://github.com/javascribble/rollup-plugin-glslang/issues"
+        "url": "https://github.com/mobec/rollup-plugin-glslang/issues"
     },
     "keywords": [
         "rollup-plugin",
